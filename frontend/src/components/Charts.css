@@ -1,0 +1,69 @@
+.chartsGrid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+@media (max-width: 1000px) {
+  .chartsGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chartPanel {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.chartHeader {
+  padding: 16px 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.chartHeader h3 {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--text-secondary);
+}
+
+.chartBody {
+  padding: 16px;
+}
+
+.noData {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 150px;
+  color: var(--text-muted);
+  font-size: 13px;
+}
+
+.latencyStats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+@media (max-width: 900px) {
+  .latencyStats {
+    grid-template-columns: 1fr;
+  }
+}
+
+.latencyCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+}
+
+.latencyCard h4 {
+  font-size: 14px;
+  color: var(--text-secondary);
+  margin-bottom: 20px;
+}

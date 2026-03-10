@@ -1,0 +1,146 @@
+.servicesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+  gap: 16px;
+}
+
+.emptyState {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 20px;
+  background: var(--bg-card);
+  border: 2px dashed var(--border-color);
+  border-radius: 12px;
+}
+
+.emptyState svg {
+  width: 48px;
+  height: 48px;
+  color: var(--text-muted);
+  margin-bottom: 16px;
+}
+
+.emptyState h3 {
+  font-size: 18px;
+  color: var(--text-secondary);
+  margin-bottom: 8px;
+}
+
+.emptyState p {
+  font-size: 13px;
+  color: var(--text-muted);
+}
+
+.serviceCard {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 18px;
+  transition: all 0.2s;
+}
+
+.serviceCard:hover {
+  border-color: var(--border-hover);
+}
+
+.serviceCard.down {
+  border-color: rgba(239, 68, 68, 0.4);
+  background: linear-gradient(135deg, var(--bg-card), rgba(127, 29, 29, 0.15));
+}
+
+.serviceCardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.serviceCardHeader .serviceInfo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.serviceUrl {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.removeBtn {
+  width: 28px;
+  height: 28px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.removeBtn:hover {
+  background: rgba(239, 68, 68, 0.15);
+  color: var(--accent-red);
+}
+
+.removeBtn svg {
+  width: 14px;
+  height: 14px;
+}
+
+.serviceMetrics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.metric {
+  background: var(--bg-tertiary);
+  border-radius: 8px;
+  padding: 10px 8px;
+  text-align: center;
+}
+
+.metricValue {
+  display: block;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 4px;
+}
+
+.metricValue.ok { color: var(--accent-green); }
+.metricValue.warn { color: var(--accent-yellow); }
+.metricValue.error { color: var(--accent-red); }
+
+.metricLabel {
+  font-size: 10px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+}
+
+.serviceChart {
+  margin: 0 -8px;
+}
+
+.errorBanner {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 12px;
+  padding: 10px 12px;
+  background: rgba(239, 68, 68, 0.15);
+  border-radius: 8px;
+  font-size: 12px;
+  color: #fca5a5;
+}
+
+.errorBanner svg {
+  width: 14px;
+  height: 14px;
+  flex-shrink: 0;
+}

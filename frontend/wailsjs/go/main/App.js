@@ -6,10 +6,18 @@ export function CheckAPI(arg1) {
   return window['go']['main']['App']['CheckAPI'](arg1);
 }
 
+export function CheckHealthMultiple(arg1) {
+  return window['go']['main']['App']['CheckHealthMultiple'](arg1);
+}
+
 export function CheckMultiple(arg1) {
   return window['go']['main']['App']['CheckMultiple'](arg1);
 }
 
 export function Greet(arg1) {
   return window['go']['main']['App']['Greet'](arg1);
+}
+
+export function HealthCheck(arg1) {
+  return window['go']['main']['App']['HealthCheck'](arg1);
 }

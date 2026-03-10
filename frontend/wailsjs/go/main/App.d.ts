@@ -4,4 +4,6 @@ import {main} from '../models';
 
 export function CheckAPI(arg1:string):Promise<main.APIResult>;
 
+export function CheckMultiple(arg1:Array<string>):Promise<Array<main.APIResult>>;
+
 export function Greet(arg1:string):Promise<string>;

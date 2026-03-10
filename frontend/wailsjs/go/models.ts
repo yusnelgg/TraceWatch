@@ -5,7 +5,7 @@ export namespace main {
 	    status: number;
 	    latency: number;
 	    error: string;
-	    time: number;
+	    time: string;
 	
 	    static createFrom(source: any = {}) {
 	        return new APIResult(source);

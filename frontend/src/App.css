@@ -1,0 +1,76 @@
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background-color: #0f172a;
+  color: #e2e8f0;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.input-group {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.input-group input {
+  flex: 1;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  background: #1e293b;
+  color: white;
+}
+
+.input-group button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  background: #3b82f6;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.input-group button:hover {
+  background: #2563eb;
+}
+
+.card {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.card p {
+  margin: 8px 0;
+}
+
+.status-ok {
+  color: #22c55e;
+  font-weight: bold;
+}
+
+.status-error {
+  color: #ef4444;
+  font-weight: bold;
+}
+
+.chart-container {
+  background: #1e293b;
+  padding: 20px;
+  border-radius: 12px;
+}
